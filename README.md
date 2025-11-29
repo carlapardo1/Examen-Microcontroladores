@@ -313,9 +313,9 @@ void updateScreen() {
   carrier.display.println(verde ? "ON" : "OFF");
 }
 ```
-```cpp
-#Código Completo
 
+#Código Completo
+```cpp
 // =========================================================
 //   BLYNK + WIFI
 // =========================================================
@@ -590,7 +590,7 @@ void updateScreen() {
 }
 ```
 
-#Lo queremos profe atoany!!
+# Lo queremos profe atoany!!
 
 
 
