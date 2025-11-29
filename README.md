@@ -312,6 +312,7 @@ void updateScreen() {
   carrier.display.print("Verde: ");
   carrier.display.println(verde ? "ON" : "OFF");
 }
+```
 
 #Código Completo
 
