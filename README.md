@@ -597,7 +597,11 @@ void updateScreen() {
 ```
 
 # Lo queremos profe atoany!!
+A pesar de la tortura que fue hacer este reto, lo logramos :)
+  nos vemos el próximo semetre.
 
+  atte. El mejor equipo del mundo y de la mecatrónica,
+    Carla, Xoch, Lilly e Isaac <3
 
 
 
