@@ -11,7 +11,13 @@ Incluye:
 - Secuencia animada de LEDs  
 - Actualización constante en pantalla TFT  
 - Comunicación IoT mediante Virtual Pins  
+---
 
+# Video del funcionamiento
+
+https://github.com/user-attachments/assets/e8dec036-d847-4175-9522-79fe86516b86
+
+---
 ---
 
 # Código utilizado
