@@ -34,6 +34,7 @@ En esta parte se inicializa la conexión con la plataforma Blynk y el WiFi del A
 
 char ssid[] = "CpiPhone";
 char pass[] = "123456789";
+```
 
 ## 2. Inicialización del MKR IoT Carrier y variables globales 
 Incluye librerías de sensores, LEDs, buzzer, pantalla y variables para controlar todo el sistema.
@@ -71,6 +72,7 @@ bool sequenceActive = false;
 int sequenceStep = 0;
 unsigned long sequenceLastStepTime = 0;
 const int SEQUENCE_SPEED = 200;
+```
 
 ## 3. Callbacks de Blynk (control desde la app IoT)
 Estas funciones se ejecutan cuando la app modifica un pin virtual. Controlan LEDs y modo del foco.
@@ -103,6 +105,7 @@ BLYNK_WRITE(V4) {
   focoManualOn = param.asInt();
   controlFocoAutomatico();
 }
+```
 
 ## 4. Setup del sistema
 Inicializa display, sensores, WiFi y el estado inicial del foco.
@@ -132,6 +135,7 @@ void setup() {
   controlFocoAutomatico();
   updateScreen();
 }
+```
 
 ## 5. Loop principal
 Aquí se ejecutan todas las funciones repetitivas del sistema.
@@ -167,6 +171,7 @@ void loop() {
     }
   }
 }
+```
 
 ## 6. Actualización de LEDs
 Controla los LEDs del carrier desde IoT o botones.
@@ -189,6 +194,7 @@ void updateCarrierLeds() {
 
   updateScreen();
 }
+```
 
 ## 7. Lectura de botones touch
 Control local del sistema sin necesidad de IoT.
@@ -235,6 +241,7 @@ void checkTouchButtons() {
     carrier.leds.show();
   }
 }
+```
 
 ## 8. Control automático del foco según temperatura
 Si el modo manual está activado, tiene prioridad.
@@ -255,6 +262,7 @@ void controlFocoAutomatico() {
     carrier.Relay1.close();
   }
 }
+```
 
 ## 9. Lectura de temperatura
 Se envía a Blynk y controla el foco.
@@ -274,6 +282,7 @@ void checkTemperature() {
 
   updateScreen();
 }
+```
 
 ## 10. Pantalla TFT
 Muestra estado actual del sistema.
@@ -578,6 +587,7 @@ void updateScreen() {
   carrier.display.println(verde ? "ON" : "OFF");
 
 }
+```
 
 #Lo queremos profe atoany!!
 
