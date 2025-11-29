@@ -313,7 +313,7 @@ void updateScreen() {
   carrier.display.println(verde ? "ON" : "OFF");
 }
 ```
-
+```cpp
 #Código Completo
 
 // =========================================================
